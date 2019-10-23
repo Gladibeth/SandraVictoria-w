@@ -1,0 +1,204 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "UTF-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name:"viewport"}/
+    %title Sandra Victoria
+    %link{rel: "stylesheet", href:"assets/css/bootstrap.min.css"}/
+    %link{rel: "stylesheet", href:"assets/css/main.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick.css"}/
+    %link{rel: "stylesheet", href:"assets/css/slick-theme.css"}/
+    %link{rel: "stylesheet", href:"assets/css/font-awesome.css"}/
+    / Favicons
+    %link{:href => "assets/img/favicon-32x32.png", :rel => "shortcut icon"}/
+  %body
+
+    %header#home
+      %nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-js
+        .nav-top__header
+          .container
+            .nav-top__content.d-flex.pl-1.pr-1.justify-content-between
+              .main-nav__contact
+                %a.mr-3{ href: 'tel:+56942161015' }
+                  %i.fa.fa-phone 
+                  %span +569 4216 1015
+                %a{ href: 'mailto:contacto@sandravictoria.cl' }
+                  %i.fa.fa-envelope
+                  %span contacto@sandravictoria.cl
+              .main-nav__redes
+                %a{ href: '#' }
+                  %i.fa.fa-facebook 
+                %a{ href: '#' }
+                  %i.fa.fa-instagram
+               
+        .container
+          .main-brand
+            %a.navbar-brand{:href => "#"}
+              %img#iso{:src => "assets/img/SandraVictoria-logo.png"}/
+            %button.navbar-toggler.p-2.border-0.hamburger.hamburger--elastic.ml-autos{"data-toggle" => "offcanvas", :type => "button"}
+              %span.hamburger-box
+                %span.hamburger-inner
+          .navbar-collapse.offcanvas-collapse
+            %ul.navbar-nav.mr-autos
+              %li.nav-item
+                %a.nav-link.active{:href => "#"} Inicio
+              %li.nav-item
+                %a.nav-link{:href => "#"} Nosotros
+              %li.nav-item
+                %a.nav-link{:href => "#"} Servicios
+              %li.nav-item
+                %a.nav-link{:href => "#"} Instalaciones
+              %li.nav-item
+                %a.nav-link{:href => "#"} Actividades
+              %li.nav-item
+                %a.nav-link{:href => "#"} Contacto
+        %hr.line-nav/
+    .main-banner
+      .main-banner__content
+        .main-banner__item
+          .mask
+            .main-banner__boxtext
+              .main-banner__text
+                .main-banner__title
+                  %p Lo invitamos a conocer el Hogar de Acogida, Sandra Victoria
+     
+          .main-banner__img
+            %img{ :src => "https://images.unsplash.com/photo-1565967679779-7455d3b82381?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"}/
+        .main-banner__item
+          .mask
+            .main-banner__boxtext
+              .main-banner__text
+                .main-banner__title
+                  %p Lo invitamos a conocer el Hogar de Acogida, Sandra Victoria
+          .main-banner__img
+            %img{ :src => "https://images.unsplash.com/photo-1554331292-735256644d5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"}/
+      %img.img-bottom{ :src => "assets/img/wave.svg"}/
+    %section.main-services
+      .container
+        .main-general__info
+          .main-general__title
+            %p Servicios
+        .main-services__content
+          .main-services__item
+            .main-services__boxcontent
+              .main-services__img
+                %img.img-round{ :src => "https://images.unsplash.com/photo-1554331292-735256644d5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"}/
+              .main-services__boxtext
+                .main-services__title
+                  %p CUIDADOS EN SALUD
+                .main-services__description
+                  %p Poseemos cuidadores con experiencia en la atención y cuidados del adulto mayor.
+          .main-services__item
+            .main-services__boxcontent
+              .main-services__img
+                %img.img-round{ :src => "https://housemed.mikado-themes.com/wp-content/uploads/2018/06/h5-img-9-new.jpg"}/
+              .main-services__boxtext
+                .main-services__title
+                  %p SERVICIO DE ALIMENTACIÓN
+                .main-services__description
+                  %p Procuramos entregar un servicio de alimentación muy casero, sabroso y saludable para nuestros residentes.
+          .main-services__item
+            .main-services__boxcontent
+              .main-services__img
+                %img.img-round{ :src => "https://housemed.mikado-themes.com/wp-content/uploads/2018/06/h5-img-7.1.jpg"}/
+              .main-services__boxtext
+                .main-services__title
+                  %p ESTIMULACIÓN Y ENTRETENIMIENTO
+                .main-services__description
+                  %p Contamos con un servicio cálido y efectivo, para estimular a nuestros residentes en términos cognitivos y estimulación física.
+          .main-services__item
+            .main-services__boxcontent
+              .main-services__img
+                %img.img-round{ :src => "https://housemed.mikado-themes.com/wp-content/uploads/2018/05/blog-post-img-17.jpg"}/
+              .main-services__boxtext
+                .main-services__title
+                  %p ADMINISTRACIÓN DE MEDICAMENTOS
+                .main-services__description
+                  %p Se administra medicamentos, bajo la supervisión e indicaciones clínicas del médico y enfermero jefe.
+          .main-services__item
+            .main-services__boxcontent
+              .main-services__img
+                %img.img-round{ :src => "https://housemed.mikado-themes.com/wp-content/uploads/2018/05/blog-post-img-16.jpg"}/
+              .main-services__boxtext
+                .main-services__title
+                  %p ASEO, ORNATO Y COMODIDADES
+                .main-services__description
+                  %p Contamos con servicio de lavandería y casino. Ambos servicios entregan calidez y un servicio oportuno para nuestros residentes.
+          .main-services__item
+            .main-services__boxcontent
+              .main-services__img
+                %img.img-round{ :src => "https://housemed.mikado-themes.com/wp-content/uploads/2018/06/h5-img-8-new.jpg"}/
+              .main-services__boxtext
+                .main-services__title
+                  %p HOSPEDAJE Y SERVICIOS ADICIONALES
+                .main-services__description
+                  %p Realizamos servicios adicionales por días o semanas tanto de hospedaje por día , incluyendo a elección de servicio de lavandería y casino.
+    %section.main-about
+      .container
+        .main-general__info
+          .main-general__title
+            %p Quiénes somos
+        .main-about__content
+          .main-about__item
+            .main-about__img
+              %img{ :src => "https://housemed.mikado-themes.com/wp-content/uploads/2018/06/h5-img-7.1.jpg"}/
+          .main-about__item
+            .main-about__info
+              .main-about__subtitle
+                %p Sandra Victoria
+              .main-about__description
+                %p Es una residencia para adultos mayores autovalentes y semivalentes. Ubicada en la comuna de San Miguel, en un barrio tranquilo y residencial a pasos del metro ciudad del niño, exactamente en Sexta Avenida #1354.
+                %p Entendemos el envejecimiento como un proceso biológico, psíquico y físico por el cual transita una persona en la última etapa de su ciclo vital. Aportamos una visión innovadora de como apoyar a nuestros Adultos Mayores de manera más armónica e integral.
+                
+    %section.main-gallery
+      .container
+        .main-general__info
+          .main-general__title
+            %p Nuestras instalaciones
+        .main-gallery__content
+          .main-gallery__item
+            .main-gallery__img
+              %img.img-round{ :src => "https://sandravictoria.cl/wp-content/uploads/2019/08/01.jpg"}/
+          .main-gallery__item
+            .main-gallery__img
+              %img.img-round{ :src => "https://sandravictoria.cl/wp-content/uploads/2019/08/02.jpg"}/
+          .main-gallery__item
+            .main-gallery__img
+              %img.img-round{ :src => "https://sandravictoria.cl/wp-content/uploads/2019/08/03-1.jpg"}/
+          .main-gallery__item
+            .main-gallery__img
+              %img.img-round{ :src => "https://sandravictoria.cl/wp-content/uploads/2019/08/08.jpg"}/
+          .main-gallery__item
+            .main-gallery__img
+              %img.img-round{ :src => "https://sandravictoria.cl/wp-content/uploads/2019/08/09.jpg"}/
+
+
+    %footer.main-footer
+      .container
+        .main-general__info
+          .main-general__title.main-general__title--center
+            %p Contáctanos
+        .main-footer__content
+          .main-footer__form
+            %form
+              .form-group
+                %input#formGroupExampleInput.form-control{:placeholder => "Nombre y apellido", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Correo", :type => "text"}/
+              .form-group
+                %input#formGroupExampleInput2.form-control{:placeholder => "Teléfono", :type => "phone"}/
+              .form-group
+                %textarea{:placeholder => "Mensaje",:rows => "8"}
+              .btn-box.float-right
+                %button.btn_custom.btn--filled
+                  Enviar
+      .main-footer__copy
+        %p
+          %a{:href =>"http://cmarketing.cl/"}
+            Contact Marketing | 
+          Todos los derechos Reservados
+    %script{src: "assets/js/jquery.min.js"}
+    %script{src: "assets/js/bootstrap.min.js"}
+    %script{src: "assets/js/slick.min.js"}
+    %script{src: "assets/js/setting-slick.js"}
+    %script{src: "assets/js/main.js"}
