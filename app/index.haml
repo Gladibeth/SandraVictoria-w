@@ -41,19 +41,19 @@
           .navbar-collapse.offcanvas-collapse
             %ul.navbar-nav.mr-autos
               %li.nav-item
-                %a.nav-link.active{:href => "#"} Inicio
+                %a.nav-link.active{:href => "#Home"} Inicio
               %li.nav-item
-                %a.nav-link{:href => "#"} Nosotros
+                %a.nav-link{:href => "#Services"} Servicios
               %li.nav-item
-                %a.nav-link{:href => "#"} Servicios
+                %a.nav-link{:href => "#About"} Nosotros
               %li.nav-item
-                %a.nav-link{:href => "#"} Instalaciones
+                %a.nav-link{:href => "#Installations"} Instalaciones
               %li.nav-item
                 %a.nav-link{:href => "#"} Actividades
               %li.nav-item
-                %a.nav-link{:href => "#"} Contacto
+                %a.nav-link{:href => "#Contact"} Contacto
         %hr.line-nav/
-    .main-banner
+    .main-banner#Home
       .main-banner__content
         .main-banner__item
           .mask
@@ -74,7 +74,7 @@
           .main-banner__img
             %img{ :src => "https://images.unsplash.com/photo-1565967679779-7455d3b82381?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"}/
       %img.img-bottom{ :src => "assets/img/wave.svg"}/
-    %section.main-services
+    %section.main-services#Services
       .container
         .main-general__info
           .main-general__title
@@ -134,7 +134,7 @@
                   %p HOSPEDAJE Y SERVICIOS ADICIONALES
                 .main-services__description
                   %p Realizamos servicios adicionales por días o semanas tanto de hospedaje por día , incluyendo a elección de servicio de lavandería y casino.
-    %section.main-about
+    %section.main-about#About
       .container
         .main-general__info
           .main-general__title
@@ -151,7 +151,7 @@
                 %p Es una residencia para adultos mayores autovalentes y semivalentes. Ubicada en la comuna de San Miguel, en un barrio tranquilo y residencial a pasos del metro ciudad del niño, exactamente en Sexta Avenida #1354.
                 %p Entendemos el envejecimiento como un proceso biológico, psíquico y físico por el cual transita una persona en la última etapa de su ciclo vital. Aportamos una visión innovadora de como apoyar a nuestros Adultos Mayores de manera más armónica e integral.
                 
-    %section.main-gallery
+    %section.main-gallery#Installations
       .container
         .main-general__info
           .main-general__title
@@ -174,7 +174,7 @@
               %img.img-round{ :src => "https://sandravictoria.cl/wp-content/uploads/2019/08/09.jpg"}/
   
 
-    %footer.main-footer
+    %footer.main-footer#Contact
       .container
         .main-general__info
           .main-general__title.main-general__title--center
